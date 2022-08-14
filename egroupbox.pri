@@ -1,2 +1,2 @@
-HEADERS += egroupbox.h
-SOURCES += egroupbox.cpp
+HEADERS += $$PWD/egroupbox.h
+SOURCES += $$PWD/egroupbox.cpp
