@@ -16,6 +16,4 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 target.path = $$[QT_INSTALL_PLUGINS]/designer
 INSTALLS    += target
 
-include(utils.pri)
-include(egroupbox.pri)
-include(elineedit.pri)
+include(extended-qt-widgets.pri)
