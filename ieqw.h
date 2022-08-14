@@ -1,3 +1,13 @@
+/**
+ * @file ieqw.h
+ * @author Emil
+ * @brief Contains interface for Extended Qt Widgets
+ * @version 0.1
+ * @date 2022-08-14
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #ifndef IEQW_H
 #define IEQW_H
 
@@ -33,7 +43,7 @@ IEQW_DEFINE_FIND_TAB(classname)         \
 IEQW_DEFINE_IS_VISIBLE_ON_TAB(classname)\
 
 /**
- * @brief Interface to Extended Qt Widgets.
+ * @brief Interface for Extended Qt Widgets.
  */
 class IEqw
 {
@@ -42,9 +52,12 @@ public:
      * @brief Find the tab who owns the current widget.
      */
     virtual QWidget* FindTab(QWidget* widget) = 0;
+    /**
+     * @brief Is widget visible on tab when it's opened (like user opens tab)
+     */
     virtual bool IsVisibleOnTab() = 0;
 
-    QWidget* tab_ = 0;
+    QWidget* tab_ = 0; ///< tab where the widget lies
 };
 
 #endif // IEQW_H

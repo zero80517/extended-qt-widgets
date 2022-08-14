@@ -50,3 +50,6 @@ compile_commands.json
 
 # QtCreator local machine specific files for imported projects
 *creator.user*
+
+# Delete generated documentation (this repo does not store html documentation, only Doxyfile)
+/html
